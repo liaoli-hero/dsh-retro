@@ -1,0 +1,55 @@
+{
+  "name": "dsh-retro",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "为 DeepSeek Harness 增加运行复盘：自动沉淀失败经验、生成自我总结，并把反复出现的固定流程整理成技能。",
+  "icon": "./assets/icon.svg",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "retrospective",
+    "self-improvement",
+    "skill",
+    "memory",
+    "experience"
+  ],
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client/index.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "verify": "node scripts/verify.mjs",
+    "verify:strict": "node scripts/verify.mjs --strict",
+    "verify:all": "node scripts/verify.mjs && node scripts/verify-skeleton.mjs && node scripts/verify-client.mjs && node scripts/verify-render.mjs && node scripts/verify-settings.mjs && node scripts/verify-switches.mjs && node scripts/verify-model-summary.mjs && node scripts/verify-live-config.mjs",
+    "verify:host": "node scripts/verify-e2e.mjs && node scripts/verify-host.mjs",
+    "test": "node scripts/verify.mjs"
+  },
+  "files": [
+    "index.js",
+    "lib",
+    "client",
+    "assets",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE",
+    "scripts"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  },
+  "dependencies": {},
+  "peerDependencies": {},
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.11.0"
+  }
+}

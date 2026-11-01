@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-label="dsh-retro">
+  <rect width="128" height="128" rx="28" fill="#0F172A"/>
+  <g fill="none" stroke="#7DA2FF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M34 62a30 30 0 1 0 10-22"/>
+    <path d="M32 28v18h18"/>
+    <path d="M64 50v16l11 7"/>
+  </g>
+  <circle cx="94" cy="94" r="9" fill="#F5C451"/>
+</svg>

@@ -1,0 +1,7 @@
+# dsh-retro bundle patch：把复盘插件挂进 profile 树。
+#
+# 只插入一行。配置全部走本包的 Config 默认值，需要调就在 profile 的
+# cordis.patch.yml 里用同 id 的条目覆盖（见 README「配置」一节）。
+- insert:
+    - id: dsh-retro
+      name: 'dsh-retro'
